@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#install IRI+Nelson+Nodejs
-curl https://raw.githubusercontent.com/automyr/scripts/master/iota_nelson_install.sh | bash
+#install IRI+Nelson+Nodejs - Run this manually
+#curl https://raw.githubusercontent.com/automyr/scripts/master/iota_nelson_install.sh | bash
 
 #install yarn
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
@@ -10,7 +10,7 @@ sudo apt-get install yarn
 
 #Install hooknode
 cd /home/iota/ && mkdir hooknode && cd hooknode
-git clone https://github.com/oysterprotocol/hooknode.git
+git clone https://github.com/oysterprotocol/hooknode
 git checkout --track origin/version-2
 cp .env.example .env
 sudo pm2 start yarn
