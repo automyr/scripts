@@ -13,7 +13,7 @@ cd /home/iota/ && mkdir hooknode && cd hooknode
 git clone https://github.com/oysterprotocol/hooknode
 git checkout --track origin/version-2
 cp .env.example .env
-sudo pm2 start yarn
+#sudo pm2 start yarn
 
 #save pm2 processes to run on boot
 sudo pm2 save
