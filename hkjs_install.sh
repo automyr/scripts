@@ -10,7 +10,7 @@ sudo apt-get install yarn
 
 #Install hooknode
 cd /home/iota/ && mkdir hooknode && cd hooknode
-git clone https://github.com/oysterprotocol/hooknode
+git clone https://github.com/oysterprotocol/hooknode.git
 git checkout --track origin/version-2
 cp .env.example .env
 #sudo pm2 start yarn
